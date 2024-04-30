@@ -17,8 +17,10 @@ func main() {
 
 	if len(feedIds) == 1 {
 		// 	// Retrieve the feedId from the CL arguments
+		fmt.Println(feedIds)
 		handleSingleReport(feedIds[0])
 	} else {
+		// fmt.Println(feedIds)
 		// Retrieve the feed IDs from command line arguments
 		handleMutipleReport(feedIds)
 	}

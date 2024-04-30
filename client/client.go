@@ -70,9 +70,9 @@ func GenerateAuthHeaders(method string, pathAndParams string, clientId string, u
 }
 
 func FetchSingleReportSingleFeed(feedId string) (SingleReport, error) {
-	baseUrl := os.Getenv("BASE_URL")         // Example: api.testnet-dataengine.chain.link
-	clientId := os.Getenv("CLIENT_ID")       // Example: "00000000-0000-0000-0000-000000000000"
-	userSecret := os.Getenv("CLIENT_SECRET") // Example: "your-secret"
+	baseUrl := os.Getenv("BASE_URL")
+	clientId := os.Getenv("CLIENT_ID")
+	userSecret := os.Getenv("CLIENT_SECRET")
 
 	params := url.Values{
 		"feedID": {feedId},
